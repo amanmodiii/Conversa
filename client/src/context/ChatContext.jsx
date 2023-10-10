@@ -21,7 +21,7 @@ export const ChatContextProvider = ({ children, user }) => {
   const [notifications, setNotifications] = useState([]);
 
   useEffect(() => {
-    const newSocket = io("http://localhost:3000");
+    const newSocket = io("https://conversa-socket.onrender.com");
     setSocket(newSocket);
 
     return () => {
