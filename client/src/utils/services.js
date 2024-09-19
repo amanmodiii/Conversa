@@ -1,4 +1,4 @@
-export const baseUrl = "https://conversa-backend.onrender.com";
+export const baseUrl = "https://conversa-backend.onrender.com/api";
 
 export const postRequest = async(url, body) => {
     const response = await fetch(url, {
